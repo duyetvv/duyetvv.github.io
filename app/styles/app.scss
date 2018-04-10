@@ -1,0 +1,75 @@
+@import "./_core/variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 66px;
+  width: 100%;
+  text-align: center;
+  color: $color-coffe3;
+  z-index: 1;;
+
+  &.affix {
+    background: $color-coffe2;
+    box-shadow: 0 3px 4px $color-coffe3;
+    color: $color-blue4;
+  }
+
+  &__nav {
+    display: inline-block;
+    width: 920px;
+    height: 100%;
+    text-align: right;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-coffe5;
+    }
+
+    &-item {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      margin: 0 -2.5px;
+      padding-top: 1.4rem;
+
+      a {
+        height: 100%;
+        padding: 0 2.2rem;
+        border-left: 2px solid $color-coffe4;
+      }
+
+      &:last-child {
+        a {
+          border-right: 2px solid $color-coffe4;
+        }
+      }
+      &:hover {
+        color: $color-coffe3;
+      }
+    }
+  }
+}
+
+.introduce {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/background.jpg') no-repeat center center;
+
+  &-inner {
+    display: inline-block;
+    position: absolute;
+    bottom: 6rem;
+    right: 6rem;
+    width: 100%;
+    color: $color-coffe2;
+  }
+
+  &-title {
+    text-align: right;
+    font-size: 70px;
+    text-transform: uppercase;
+  }
+}

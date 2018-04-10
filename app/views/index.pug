@@ -1,0 +1,21 @@
+extends _core/layout
+
+block append vars
+  - var title = 'duyetvv'
+
+block container
+  main.main#main
+    header.header#header
+      ul.header__nav
+        li.header__nav-item
+          a(href="#") home
+        li.header__nav-item
+          a(href="#") skill
+        li.header__nav-item
+          a(href="#") experience
+        li.header__nav-item
+          a(href="#") contact
+    section.introduce#introduce
+      .introduce-inner
+        h1.introduce-title I'm <br/> vo van duyet
+        h3.introduce-desc
