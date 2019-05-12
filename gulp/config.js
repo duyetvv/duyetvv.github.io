@@ -1,10 +1,3 @@
-var $           = require('gulp-load-plugins')();
-var del         = require('del');
-var gulp        = require('gulp');
-var seqence     = require('run-sequence');
-var browserSync = require('browser-sync');
-
-
 var config = {
   root: 'app',
   origin: {
