@@ -1,0 +1,49 @@
+@use '../styles/tokens';
+@use 'sass:color';
+
+.contact {
+  padding: tokens.$space-xxl tokens.$space-xl;
+  text-align: center;
+  background-color: color.adjust(tokens.$color-background, $lightness: 2%);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: tokens.$space-sm;
+  color: tokens.$color-accent-warm;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: tokens.$color-text-secondary;
+  margin-bottom: tokens.$space-lg;
+}
+
+.cta {
+  margin-bottom: tokens.$space-xxl;
+}
+
+.footer {
+  border-top: 1px solid color.adjust(tokens.$color-background, $lightness: 10%);
+  padding-top: tokens.$space-lg;
+  
+  .links {
+    margin-bottom: tokens.$space-md;
+
+    a {
+      color: tokens.$color-text-secondary;
+      text-decoration: none;
+      margin: 0 tokens.$space-sm;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: tokens.$color-accent-warm;
+      }
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: color.adjust(tokens.$color-text-secondary, $lightness: 10%);
+  }
+}

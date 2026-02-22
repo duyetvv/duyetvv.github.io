@@ -1,0 +1,35 @@
+@use '../../../styles/tokens';
+@use 'sass:color';
+
+.btn {
+  padding: tokens.$space-sm tokens.$space-md;
+  border: 1px solid transparent;
+  border-radius: tokens.$border-radius;
+  font-family: tokens.$font-family-body;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.primary {
+  background-color: tokens.$color-accent-warm;
+  color: tokens.$color-background;
+  border-color: tokens.$color-accent-warm;
+
+  &:hover {
+    background-color: color.adjust(tokens.$color-accent-warm, $lightness: -5%);
+    transform: translateY(-2px);
+  }
+}
+
+.secondary {
+  background-color: transparent;
+  color: tokens.$color-accent-warm;
+  border-color: tokens.$color-accent-warm;
+
+  &:hover {
+    background-color: rgba(tokens.$color-accent-warm, 0.1);
+    transform: translateY(-2px);
+  }
+}

@@ -1,0 +1,15 @@
+@use '../../../styles/tokens';
+@use 'sass:color';
+
+.card {
+  background-color: color.adjust(tokens.$color-background, $lightness: 5%);
+  border: 1px solid color.adjust(tokens.$color-background, $lightness: 10%);
+  border-radius: tokens.$border-radius;
+  padding: tokens.$space-md;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: tokens.$color-accent-secondary;
+    transform: translateY(-4px);
+  }
+}

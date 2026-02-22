@@ -1,0 +1,5 @@
+@use '../../../styles/tokens';
+
+.section {
+  padding: tokens.$space-xxl tokens.$space-xl;
+}

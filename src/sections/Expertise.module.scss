@@ -1,0 +1,62 @@
+@use '../styles/tokens';
+@use 'sass:color';
+
+.expertise {
+  background-color: color.adjust(tokens.$color-background, $lightness: 2%);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: tokens.$space-xl;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: tokens.$color-accent-secondary;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: tokens.$space-lg;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category {
+  background-color: color.adjust(tokens.$color-background, $lightness: 5%);
+  border: 1px solid color.adjust(tokens.$color-background, $lightness: 10%);
+  border-radius: tokens.$border-radius;
+  padding: tokens.$space-lg;
+}
+
+.categoryTitle {
+  font-family: tokens.$font-family-headings;
+  font-size: 1.5rem;
+  color: tokens.$color-accent-warm;
+  margin-bottom: tokens.$space-md;
+  padding-bottom: tokens.$space-sm;
+  border-bottom: 1px solid color.adjust(tokens.$color-background, $lightness: 15%);
+}
+
+.skillList {
+  list-style: none;
+}
+
+.skillItem {
+  font-size: 1rem;
+  color: tokens.$color-text-secondary;
+  margin-bottom: tokens.$space-sm;
+  line-height: 1.6;
+}
