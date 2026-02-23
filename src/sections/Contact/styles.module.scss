@@ -1,5 +1,5 @@
-@use '../styles/tokens';
 @use 'sass:color';
+@use '../../assets/styles/tokens';
 
 .contact {
   padding: tokens.$space-xxl tokens.$space-xl;
