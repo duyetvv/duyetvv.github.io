@@ -11,11 +11,11 @@ export const contactData = {
     {
       name: 'GitHub',
       url: 'https://github.com/duyetvv'
+    },
+    {
+      name: 'Resume',
+      url: 'https://github.com/duyetvv/duyetvv.github.io/blob/master/Vo_Van_Duyet_Senior_Frontend.pdf'
     }
-    // {
-    //   name: 'Resume',
-    //   url: '#'
-    // }
   ],
   footer: 'Vo Van Duyet. Built with React & lots of coffee.'
 };
